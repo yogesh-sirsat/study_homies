@@ -1,1 +1,2 @@
-# studyhomies
+# Study Homies, study together platforom by Yogesh Sirsat.
+work in progress...
