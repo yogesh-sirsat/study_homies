@@ -1,10 +1,70 @@
 <!DOCTYPE html>
 <html>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Study Homies</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script type="text/javascript" src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"></script>
+  </head>
 
-<h1>Welcome to study together platform Study Homies by Yogesh Sirsat</h1>
+  <header>
+    <nav class="navbar bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand mb-0 h1" href="/">Study Homies</a>
+        </div>
+    </nav>
+  </header>
 
-<p>Work in progess...</p>
-
-</body>
+  <body>
+    <div class="container">
+        <h2>Welcome to Study</h2>
+    
+        <p>
+          Work in progess... Until that you can just start studying and really start
+          studying I have an eye on you.
+        </p>
+        <br>
+        <div class="webcam">
+            <video id="webcam" autoplay playsinline width="640" height="480"></video>
+            <canvas id="canvas" class="d-none"></canvas>
+            <p>Also you know, you just need be with your only true inspiration to study.</p>
+            <p>Do you wanna see that inspiration?</p>
+            <button id="startButton" class="btn btn-outline-dark" onclick="startWebcam()">See</button>
+        </div>
+    </div>
+  </body>
+  <footer class="container">
+    <div class="position-absolute bottom-0 end-0 translate-middle-x">
+      <style>
+        .made-with-love {
+          font-size: 12px;
+        }
+        .heart {
+          font-style: normal;
+          font-weight: 500;
+          color: #c0392b;
+        }
+        .author_name {
+            color: #2c3e50;
+            font-weight: 500;
+            text-decoration: none;
+        }
+      </style>
+      <p class="made-with-love">
+        Made with <i class="heart" aria-label="love">&#10084;</i> by <a href="https://github.com/yogesh-sirsat" class="author_name">Yogesh Sirsat</a>
+      </p>
+    </div>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    crossorigin="anonymous"
+    ></script>
+    <script src="webcam.js"></script>
+  </footer>
 </html>
